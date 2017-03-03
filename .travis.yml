@@ -3,7 +3,6 @@ sudo: required
 services:
   - docker
 before_install:
-  - chmod +x /bin/config-build-container.sh
   - ./bin/config-build-container.sh
 script:
   - ./bin/test-proj.sh
