@@ -8,4 +8,6 @@ if [ "$TRAVIS_BRANCH" == "master" ]; then
     -n $ECS_SERVICE_NAME \
     -c $ECS_CLUSTER_NAME \
     -i "$DOCKER_REPO"/"$DOCKER_IMAGE":latest
+    -r us-west-2
+    -o json
 fi
